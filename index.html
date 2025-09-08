@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohamed Kamal | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    body {
+      font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #fff;
+      color: #111;
+      line-height: 1.6;
+    }
+    header {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 20px 40px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      position: sticky; top: 0; background: #fff; z-index: 100;
+    }
+    header h1 {font-size: 20px; font-weight: 600;}
+    nav ul {display: flex; gap: 20px; list-style: none;}
+    nav a {
+      text-decoration: none; color: #111; font-weight: 500; transition: 0.3s;
+    }
+    nav a:hover {color: #555;}
+    .linkedin-logo img {width: 28px; transition: 0.3s;}
+    .linkedin-logo img:hover {opacity: 0.7;}
+    .hero {
+      text-align: center; padding: 120px 20px; max-width: 800px; margin: auto;
+    }
+    .hero h2 {font-size: 40px; font-weight: 600; margin-bottom: 10px;}
+    .hero p {font-size: 18px; color: #333;}
+    .profile-pic {
+      width: 140px; height: 140px; border-radius: 50%;
+      object-fit: cover; box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+    section {padding: 80px 20px; max-width: 900px; margin: auto;}
+    section h3 {font-size: 28px; margin-bottom: 30px; font-weight: 600;}
+    .about, .projects, .contact {
+      background: #fafafa; border-radius: 20px; padding: 40px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    }
+    .projects ul {list-style: none;}
+    .projects li {
+      margin-bottom: 20px; padding: 20px; border-radius: 12px;
+      background: #fff; box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+    }
+    .projects li:hover {transform: translateY(-5px);}
+    .contact form {display: flex; flex-direction: column; gap: 15px;}
+    .contact input, .contact textarea {
+      padding: 12px; border: 1px solid #ddd; border-radius: 10px;
+      font-size: 16px; transition: 0.3s;
+    }
+    .contact input:focus, .contact textarea:focus {border-color: #111; outline: none;}
+    .contact button {
+      padding: 14px; background: #111; color: #fff;
+      border: none; border-radius: 10px; font-size: 16px; cursor: pointer;
+      transition: 0.3s;
+    }
+    .contact button:hover {background: #333;}
+    footer {
+      text-align: center; padding: 30px; font-size: 14px; color: #666;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Mohamed Kamal</h1>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <a href="https://www.linkedin.com/in/mohammed-kamal-47603a337/" class="linkedin-logo" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+  </a>
+</header>
+
+<section class="hero">
+  <img src=".jpg" alt="Profile Picture" class="profile-pic">
+  <h2>Hi, I'm Mohammed kamal 👋</h2>
+  <p>Aspiring Software Engineer | Passionate about Cloud & AI</p>
+</section>
+
+<section id="about" class="about">
+  <h3>About Me</h3>
+  <p>
+    A Computer Science student passionate about Cloud and Software development. I enjoy building systems that are scalable and user-friendly, with a focus on cloud computing, software engineering, and AI. Through my projects, I aim to strengthen my technical skills and grow into a developer who creates impactful solutions that make technology more efficient and accessible.
+  </p>
+</section>
+
+<section id="projects" class="projects">
+  <h3>Projects</h3>
+  <ul>
+    <li><b>ATM Project</b> – Simulation of ATM operations using Java.</li>
+    <li><b>Inventory Management System</b> – OOP-based Java project with file handling and reports.</li>
+    <li><b>AI Healthcare Assistant</b> – Streamlit app for appointment scheduling and patient data.</li>
+    <li><b>Scraper with UI</b> – Browser automation project to extract course offerings with Python & Streamlit.</li>
+  </ul>
+</section>
+
+<section id="contact" class="contact">
+  <h3>Contact Me</h3>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  © 2025 Mohamed Kamal. All rights reserved.
+</footer>
+
+</body>
+</html>
